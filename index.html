@@ -57,7 +57,7 @@
             <p class="project-note">Playable Windows prototype · More updates coming soon</p>
             <div class="project-links">
               <a class="button primary" href="https://junodevx.itch.io/pocket-survivor" target="_blank" rel="noopener">Play Pocket Survivor <span>↗</span></a>
-              <a class="button secondary" href="https://github.com/junonyaa/Juno-portfolio" target="_blank" rel="noopener">View source <span>↗</span></a>
+              <a class="button secondary" href="#gallery">View screenshots <span>↓</span></a>
             </div>
           </div>
         </article>
@@ -72,17 +72,25 @@
           </div>
         </div>
 
-        <div class="gallery-section">
+        <div id="pocket-survivor-gallery" class="gallery-section" data-game="pocket-survivor">
           <div class="media-heading">
             <p class="eyebrow">Prototype moments</p>
             <p>A few snapshots of combat, progression, and the game-over screen.</p>
           </div>
           <div class="gallery">
-            <figure><img src="pocket-survivor-level-up.png" alt="Pocket Survivor level-up screen showing Heal, Speed, and Ammo upgrades" /><figcaption>Choosing an upgrade after leveling up</figcaption></figure>
-            <figure><img src="pocket-survivor-game-over.png" alt="Pocket Survivor game-over screen surrounded by enemies" /><figcaption>Game over after the enemy wave catches up</figcaption></figure>
+            <figure><button class="gallery-open" data-image="pocket-survivor-level-up.png" data-alt="Pocket Survivor level-up screen showing Heal, Speed, and Ammo upgrades" aria-label="Open level-up screenshot"><img src="pocket-survivor-level-up.png" alt="Pocket Survivor level-up screen showing Heal, Speed, and Ammo upgrades" /></button><figcaption>Choosing an upgrade after leveling up</figcaption></figure>
+            <figure><button class="gallery-open" data-image="pocket-survivor-game-over.png" data-alt="Pocket Survivor game-over screen surrounded by enemies" aria-label="Open game-over screenshot"><img src="pocket-survivor-game-over.png" alt="Pocket Survivor game-over screen surrounded by enemies" /></button><figcaption>Game over after the enemy wave catches up</figcaption></figure>
           </div>
         </div>
       </section>
+
+      <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Screenshot viewer" hidden>
+        <button class="lightbox-close" type="button" aria-label="Close screenshot viewer">×</button>
+        <button class="lightbox-arrow lightbox-prev" type="button" aria-label="Previous screenshot">←</button>
+        <img class="lightbox-image" src="" alt="" />
+        <button class="lightbox-arrow lightbox-next" type="button" aria-label="Next screenshot">→</button>
+        <p class="lightbox-count"></p>
+      </div>
 
       <section id="about" class="section about shell">
         <div class="section-heading">
@@ -120,5 +128,6 @@
       <span>© 2026 Juno</span>
       <span>Built while learning</span>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
