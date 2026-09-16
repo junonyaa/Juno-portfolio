@@ -20,11 +20,11 @@
 
     <main id="top">
       <section class="hero shell">
-        <p class="eyebrow">Aspiring game developer · Godot · GDScript</p>
+        <p class="eyebrow">Aspiring game developer · Godot · Unity</p>
         <h1>Small games.<br /><em>Big curiosity.</em></h1>
         <p class="hero-copy">
           I’m Juno, a beginner game developer building colorful 2D experiences
-          while learning Godot, GDScript, and the craft of making games feel good.
+          while learning Godot, Unity, GDScript, and the craft of making games feel good.
         </p>
         <div class="actions">
           <a class="button primary" href="#work">See my work <span>↓</span></a>
@@ -38,7 +38,16 @@
           <h2>What I’ve been making</h2>
         </div>
 
-        <article class="project-card">
+        <div class="game-carousel" aria-label="Featured games">
+          <div class="game-carousel-controls">
+            <button class="game-arrow" type="button" data-game-direction="previous" aria-label="Previous game">←</button>
+            <span class="game-position" aria-live="polite">01 / 02</span>
+            <button class="game-arrow" type="button" data-game-direction="next" aria-label="Next game">→</button>
+          </div>
+
+          <div class="game-slides">
+          <div class="game-slide is-active" data-game-slide="pocket-survivor">
+          <article class="project-card">
           <div class="project-visual">
             <img src="pocket-survivor-gameplay.png" alt="Pocket Survivor gameplay with the player surrounded by enemies" />
           </div>
@@ -60,12 +69,13 @@
               <a class="button secondary" href="#pocket-survivor-gallery">View screenshots <span>↓</span></a>
             </div>
           </div>
-        </article>
+          </article>
 
-        <div id="video" class="media-section">
+        <div id="pocket-survivor-video" class="media-section">
           <div class="media-heading">
             <p class="eyebrow">Gameplay video</p>
             <p>See the prototype in action, from the opening wave to the final stand.</p>
+            <div class="media-controls"><button class="media-arrow" type="button" data-game-direction="previous" aria-label="Previous gameplay video">←</button><span>Video 01 / 02</span><button class="media-arrow" type="button" data-game-direction="next" aria-label="Next gameplay video">→</button></div>
           </div>
           <div class="video-frame">
             <iframe src="https://www.youtube.com/embed/0jFBg3EjOwY" title="Pocket Survivor gameplay video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -76,11 +86,64 @@
           <div class="media-heading">
             <p class="eyebrow">Pocket Survivor screenshots</p>
             <p>A few snapshots of combat, progression, and the game-over screen.</p>
+            <div class="media-controls screenshot-controls"><button class="media-arrow screenshot-prev" type="button" aria-label="Previous Pocket Survivor screenshot">←</button><span class="screenshot-position">01 / 02</span><button class="media-arrow screenshot-next" type="button" aria-label="Next Pocket Survivor screenshot">→</button></div>
           </div>
           <div class="gallery">
             <figure><button class="gallery-open" data-image="pocket-survivor-level-up.png" data-alt="Pocket Survivor level-up screen showing Heal, Speed, and Ammo upgrades" aria-label="Open level-up screenshot"><img src="pocket-survivor-level-up.png" alt="Pocket Survivor level-up screen showing Heal, Speed, and Ammo upgrades" /></button><figcaption>Choosing an upgrade after leveling up</figcaption></figure>
             <figure><button class="gallery-open" data-image="pocket-survivor-game-over.png" data-alt="Pocket Survivor game-over screen surrounded by enemies" aria-label="Open game-over screenshot"><img src="pocket-survivor-game-over.png" alt="Pocket Survivor game-over screen surrounded by enemies" /></button><figcaption>Game over after the enemy wave catches up</figcaption></figure>
           </div>
+        </div>
+        </div>
+
+        <div class="game-slide" data-game-slide="adventure-run" hidden>
+          <article class="project-card">
+            <div class="project-visual">
+              <img src="adventure-run-gameplay.png" alt="Adventure Run gameplay with the player navigating a pixel-art street" />
+            </div>
+            <div class="project-content">
+              <div class="project-meta"><span>02</span><span>Game development · 2D prototype</span></div>
+              <h3>Adventure Run</h3>
+              <p class="project-intro">
+                A pixel-art arcade game where the player navigates a busy street,
+                avoids traffic, and tries to beat their high score.
+              </p>
+              <div class="feature-list">
+                <div><strong>Arcade</strong><span>Fast, focused gameplay built around survival</span></div>
+                <div><strong>Challenge</strong><span>Navigate hazards while the timer keeps moving</span></div>
+                <div><strong>Style</strong><span>Colorful pixel-art world and character design</span></div>
+              </div>
+              <p class="project-note">Gameplay prototype · More updates coming soon</p>
+              <div class="project-links">
+                <a class="button primary" href="https://junodevx.itch.io/adventure-run" target="_blank" rel="noopener">Play Adventure Run <span>↗</span></a>
+                <a class="button secondary" href="https://github.com/junonyaa/Adventure-Run" target="_blank" rel="noopener">View game source <span>↗</span></a>
+                <a class="button secondary" href="#adventure-run-gallery">View screenshots <span>↓</span></a>
+              </div>
+            </div>
+          </article>
+
+          <div id="adventure-run-video" class="media-section">
+          <div class="media-heading">
+              <p class="eyebrow">Gameplay video</p>
+              <p>Watch Adventure Run in action.</p>
+              <div class="media-controls"><button class="media-arrow" type="button" data-game-direction="previous" aria-label="Previous gameplay video">←</button><span>Video 02 / 02</span><button class="media-arrow" type="button" data-game-direction="next" aria-label="Next gameplay video">→</button></div>
+            </div>
+            <div class="video-frame">
+              <iframe src="https://www.youtube.com/embed/t5M2DsYNQLM" title="Adventure Run gameplay video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div id="adventure-run-gallery" class="gallery-section" data-game="adventure-run">
+            <div class="media-heading">
+              <p class="eyebrow">Adventure Run screenshots</p>
+              <p>A look at the street scene and the game-over screen.</p>
+              <div class="media-controls screenshot-controls"><button class="media-arrow screenshot-prev" type="button" aria-label="Previous Adventure Run screenshot">←</button><span class="screenshot-position">01 / 02</span><button class="media-arrow screenshot-next" type="button" aria-label="Next Adventure Run screenshot">→</button></div>
+            </div>
+            <div class="gallery">
+              <figure><button class="gallery-open" data-image="adventure-run-gameplay.png" data-alt="Adventure Run gameplay with the player navigating a pixel-art street" aria-label="Open Adventure Run gameplay screenshot"><img src="adventure-run-gameplay.png" alt="Adventure Run gameplay with the player navigating a pixel-art street" /></button><figcaption>Navigating the street during a run</figcaption></figure>
+              <figure><button class="gallery-open" data-image="adventure-run-game-over.png" data-alt="Adventure Run game-over screen showing the player's high score" aria-label="Open Adventure Run game-over screenshot"><img src="adventure-run-game-over.png" alt="Adventure Run game-over screen showing the player's high score" /></button><figcaption>Game over and high-score screen</figcaption></figure>
+            </div>
+          </div>
+        </div>
         </div>
       </section>
 
@@ -104,14 +167,14 @@
             perfect way to bring those interests together.
           </p>
           <p>
-            I currently focus on 2D game development with Godot and GDScript.
-            I’m also learning Python and plan to explore 3D game development
-            with Godot. My goal is to keep making games, solving problems, and
-            learning from every project.
+            I currently focus on 2D game development while learning both Godot
+            and Unity. I use GDScript with Godot and I’m building my broader
+            programming foundation through Python as well. I plan to explore
+            3D game development with both engines as I continue learning.
           </p>
         </div>
         <div class="skills">
-          <span>Godot</span><span>GDScript</span><span>2D development</span><span>Python</span><span>Game design</span><span>Debugging</span>
+          <span>Godot</span><span>Unity</span><span>GDScript</span><span>2D development</span><span>Python</span><span>Game design</span><span>Debugging</span>
         </div>
       </section>
 
