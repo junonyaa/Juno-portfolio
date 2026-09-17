@@ -1,6 +1,6 @@
 # Juno — Game Developer Portfolio
 
-This is the source code for my personal game-development portfolio. I’m learning and building with both Godot and Unity.
+This is the source code for my personal game-development portfolio. I’m learning and building with both Godot and Unity, including GDScript and C#.
 
 ## Links
 
@@ -8,6 +8,7 @@ This is the source code for my personal game-development portfolio. I’m learni
 - **Pocket Survivor:** [junodevx.itch.io/pocket-survivor](https://junodevx.itch.io/pocket-survivor)
 - **Adventure Run:** [junodevx.itch.io/adventure-run](https://junodevx.itch.io/adventure-run)
 - **Adventure Run source:** [github.com/junonyaa/Adventure-Run](https://github.com/junonyaa/Adventure-Run)
+- **Adventure Run gameplay video:** [Watch on YouTube](https://www.youtube.com/watch?v=btvosN75re4)
 - **Gameplay video:** [Watch on YouTube](https://youtu.be/0jFBg3EjOwY)
 - **LinkedIn:** [Allahbux Junejo](https://www.linkedin.com/in/allahbux-junejo-157a64409)
 
