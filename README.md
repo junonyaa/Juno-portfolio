@@ -36,3 +36,5 @@ This is the source code for my personal game-development portfolio. I’m learni
 - `pocket-survivor-game-over.png` — game-over screenshot
 - `adventure-run-gameplay.png` — Adventure Run gameplay screenshot
 - `adventure-run-game-over.png` — Adventure Run game-over screenshot
+- `adventure-run-road.png` — Adventure Run road gameplay screenshot
+- `adventure-run-retry.png` — Adventure Run retry screen screenshot
